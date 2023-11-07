@@ -1,5 +1,5 @@
 body{
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -30,15 +30,31 @@ ul{
 
 .header ul{
     margin-left: auto;
-    margin-right: 100px;
     gap: 16px;
+}
+
+.media,
+.c2a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.media .text{
+    margin-right: 36px;
+}
+
+.media img{
+    background-color: gray;
+    flex: 0 0 auto;
+    text-align: center;
 }
 
 .hero,
 .footer {
     background-color: #1F2937;
     color: #e5e7eb;
-    width: 100%;
+    width: 100vw; /*research what this actually does*/
 }
 
 .hero strong{
@@ -54,7 +70,6 @@ ul{
 .logo{
     font-size: 24px;
     color: #F9FAF8;
-    margin-left: 100px;
 }
 
 button,
@@ -79,19 +94,18 @@ button,
 }
 
 .info{
-    padding: 0 100% 75px;
+    padding: 0 0 75px;
 }
 
 .info li{
     margin: 18px;
     margin-top: 0;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .quote {
     flex: 0;
-    width: 750px;
-    padding: 75px 100%;
     background-color: #e5e7eb;
     color: #1f2937;
     font-size: 36px;
@@ -105,12 +119,7 @@ button,
 }
 
 .c2a{
-    margin: 75px 100%;
-    padding: 28px 56px;
-    width: 750px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    margin: 75px auto;
 }
 
 .c2a strong{

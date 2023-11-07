@@ -21,6 +21,7 @@ ul{
     height: 64px;
     display: flex;
     align-items: center;
+    flex: 1 0 auto;
 }
 
 .header{
@@ -60,6 +61,7 @@ button,
 .c2a{
     background-color: #3882f6;
     color: #F9FAF8;
+    flex: 0 auto;
 }
 
 .info strong{
@@ -104,12 +106,19 @@ button,
 
 .c2a{
     margin: 75px 100%;
-    padding: 28px;
-    width: 75%;
+    padding: 28px 56px;
+    width: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .c2a strong{
     font-size: 28px;
+}
+
+.c2a button{
+    margin: auto;
 }
 
 .footer{

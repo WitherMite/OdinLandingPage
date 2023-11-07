@@ -7,10 +7,36 @@ body{
     justify-content: space-between;
 }
 
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header,
+.footer{
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.header{
+    justify-content: flex-start;
+}
+
+.header ul{
+    margin-left: auto;
+    margin-right: 100px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
 .hero,
 .footer {
     background-color: #1F2937;
-    color: #e5e7eb
+    color: #e5e7eb;
+    width: 100%;
 }
 
 .hero strong{
@@ -26,6 +52,7 @@ body{
 .logo{
     font-size: 24px;
     color: #F9FAF8;
+    margin-left: 100px;
 }
 
 button,
@@ -42,4 +69,8 @@ button,
     background-color: #e5e7eb;
     color: #1f2937;
     font-size: 36px;
+}
+
+.footer{
+    justify-content: center;
 }

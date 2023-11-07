@@ -1,0 +1,45 @@
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero,
+.footer {
+    background-color: #1F2937;
+    color: #e5e7eb
+}
+
+.hero strong{
+    font-size: 48px;
+    color: #F9FAF8;
+}
+
+.hero .text,
+.right{
+    font-size: 18px;
+}
+
+.logo{
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+button,
+.c2a{
+    background-color: #3882f6;
+}
+
+.info strong{
+    font-size: 36px;
+    color: #1F2937;
+}
+
+.quote {
+    background-color: #e5e7eb;
+    color: #1f2937;
+    font-size: 36px;
+}

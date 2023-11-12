@@ -87,11 +87,11 @@ button,
 .c2a{
     background-color: #3882f6;
     color: #F9FAF8;
-    flex: 0 auto;
     border-radius: .5rem;
 }
 
 button{
+    flex-shrink: 0;
     width: 14ch;
     font-weight: bold;
     padding: .5em 1.5em;
@@ -116,12 +116,24 @@ button{
     flex: 1;
     padding: 0 0 75px;
 }
+.info ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
 .info li{
     margin: 18px;
     margin-top: 0;
     justify-content: center;
-    flex-wrap: wrap;
+    flex: 0;
+}
+
+.info img{
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: #3882f6;
+    margin-bottom: .25rem;
 }
 
 .quote {

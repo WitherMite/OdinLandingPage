@@ -1,10 +1,19 @@
 body{
-    min-height: 100vh;
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.c2a,
+.media,
+.info,
+header{
+    flex: 1;
+    margin-left: 10rem;
+    margin-right: 10rem;
 }
 
 ul{
@@ -16,19 +25,19 @@ ul{
     justify-content: center;
 }
 
-.header,
-.footer{
-    height: 64px;
+header,
+footer{
+    padding: 2rem 0;
     display: flex;
     align-items: center;
-    flex: 1 0 auto;
+    flex: 0;
 }
 
-.header{
+header{
     justify-content: flex-start;
 }
 
-.header ul{
+header ul{
     margin-left: auto;
     gap: 16px;
 }
@@ -36,6 +45,8 @@ ul{
 .media,
 .c2a{
     display: flex;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
     align-items: center;
     justify-content: space-between;
 }
@@ -51,10 +62,10 @@ ul{
 }
 
 .hero,
-.footer {
+footer {
+    align-self: stretch;
     background-color: #1F2937;
     color: #e5e7eb;
-    width: 100vw; /*research what this actually does*/
 }
 
 .hero strong{
@@ -79,6 +90,11 @@ button,
     flex: 0 auto;
 }
 
+button{
+    width: 14ch;
+    padding: .5em 1.5em;
+}
+
 .info strong{
     padding: 32px 0;
     font-size: 36px;
@@ -94,6 +110,7 @@ button,
 }
 
 .info{
+    flex: 1;
     padding: 0 0 75px;
 }
 
@@ -105,7 +122,9 @@ button,
 }
 
 .quote {
-    flex: 0;
+    flex: 1;
+    align-self: stretch;
+    padding: 8rem;
     background-color: #e5e7eb;
     color: #1f2937;
     font-size: 36px;
@@ -119,7 +138,7 @@ button,
 }
 
 .c2a{
-    margin: 75px auto;
+    padding: 1.5rem 4rem;
 }
 
 .c2a strong{
@@ -127,9 +146,9 @@ button,
 }
 
 .c2a button{
-    margin: auto;
+    margin-left: 4rem;
 }
 
-.footer{
+footer{
     justify-content: center;
 }

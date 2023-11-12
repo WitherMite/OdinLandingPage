@@ -88,11 +88,14 @@ button,
     background-color: #3882f6;
     color: #F9FAF8;
     flex: 0 auto;
+    border-radius: .5rem;
 }
 
 button{
     width: 14ch;
+    font-weight: bold;
     padding: .5em 1.5em;
+    border-style: none;
 }
 
 .info strong{
@@ -147,6 +150,8 @@ button{
 
 .c2a button{
     margin-left: 4rem;
+    border-style: solid;
+    border-color: #F9FAF8;
 }
 
 footer{
